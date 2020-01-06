@@ -19,8 +19,8 @@ function diamond(size, char) {
     arrSpaces.reverse();
     // console.log(arrSpaces);
     // console.log(asterixArr);
-    for (let k = 0; k < size; k++) {
-        console.log(arrSpaces[k] + asterixArr[k]);
+    for (let j = 0; j < size; j++) {
+        console.log(arrSpaces[j] + asterixArr[j]);
     }
 
     asterixArr.pop();
@@ -29,10 +29,10 @@ function diamond(size, char) {
     arrSpaces.reverse();
     // console.log(asterixArr);
     //console.log(arrSpaces);
-    for (let l = 0; l < size - 1; l++) {
-        console.log(arrSpaces[l] + asterixArr[l]);
+    for (let k = 0; k < size - 1; k++) {
+        console.log(arrSpaces[k] + asterixArr[k]);
     }
     //console.log(lastSpace + char);
 }
 
-diamond(8, "*")
+diamond(3, "*")
