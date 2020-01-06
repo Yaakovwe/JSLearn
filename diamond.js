@@ -35,4 +35,4 @@ function diamond(size, char) {
     //console.log(lastSpace + char);
 }
 
-diamond(3, "*")
+diamond(4, "*")
