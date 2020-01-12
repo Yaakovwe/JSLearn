@@ -44,7 +44,7 @@ function diamondFunc(size, charOrString, spaceHolder) {
     }
 
 }
-console.log(diamondFunc(8)); // OK (15 lines)
+console.log(diamondFunc(8, "$", " ")); // OK (15 lines)
 console.log(diamondFunc(0)); // OK (No lines)
 console.log(diamondFunc('#')); // ("Size must be a number")
 console.log(diamondFunc(3)); // OK (5 lines)

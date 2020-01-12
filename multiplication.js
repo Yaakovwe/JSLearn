@@ -25,6 +25,7 @@ function multiplicationTable(size, toSize) {
             }
         }
         console.log(jToString);
+
     }
 }
 multiplicationTable(7);

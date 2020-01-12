@@ -8,4 +8,4 @@ function fixArray(oldArray, pos, value) {
 }
 //fixArray(['y', 'a', 'k', 'o', 'v'], 2, 'a'); //['y','a','k','o','v'],2,'a' => yaakov
 console.log(fixArray(['y', 'a', 'k', 'o', 'v'], 2, 'a')); //['y','a','k','o','v'],2,'a' => yaakov
-console.log(fixArray([1, '2', 'k', 3, 'v'], 4, "te")); //['y','a','k','o','v'],2,'a' => 1, '2', 'k', 3,te,'v'
+console.log(fixArray([1, '2', 'k', 3, 'v'], 4, "te")); //['y','a','k','o','v'],2,'a' => 12k3tev
