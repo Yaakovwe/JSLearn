@@ -1,5 +1,5 @@
 function fixArray(oldArray, pos, value) {
-    let newArray = oldArray.splice(pos);
+    let newArray = oldArray.splice(pos); //  Splits the array into 2 with pos as the index 
     oldArray.push(value);
     for (let i = 0; i < newArray.length; i++) {
         oldArray.push(newArray[i]);
