@@ -1,36 +1,37 @@
 'use strict';
 
 class Node {
-    constructor(data, next = null) {
-        this.data = data,
+    constructor(value, next = null) {
+        this.value = value,
             this.next = next
     }
 }
+
 class LinkedList {
-    constructor() {
-        this.head = null;
+    constructor(arr) {
+        this.head = new Node();
+        this.head.value = arr[0];
+        this.head.next = new Node();
+        arr.forEach(element => { //number
+            this.head.next.value = element;
+            this.head.next.next = new Node();
+        });
     }
 }
 
-function myLinkedList(str, pos, value) {
-    const splitStr = str.split("");
-    // const strHead = splitStr[0];
-    //  let myHead = new LinkedList(strHead);
-    //  myHead.head = strHead;
-    let myNode = new Node();
-    let tail = myNode;
-    //console.log(tail);
-    for (let i = 0; i < splitStr.length - 1; i++) {
-        if (i == (pos)) {
-            tail.data = value;
-            tail.next = splitStr[i];
-        } else {
-            tail.data = splitStr[i];
-            tail.next = splitStr[i + 1];
-            console.log(tail);
-        }
-    }
+function myProgram(data) {
+    // let newNode = new Node();
+    const linkedList = new LinkedList(data);
+    return linkedList.head;
+
+
+    //myLinkedList('yakov', 4, 'a'); //['y','a','k','o','v'],2,'a' => yaakov
+    //['y','a','k','o','v'],2,'a' => yaakov
+    // var mylist2 = myLinkedList([1, 2, 3, 4, 6], 4, 5); //['y','a','k','o','v'],2,'a' => yaakov
+    // myLinkedList(mylist1, 4, 5); //['y','a','k','o','v'],2,'a' => yaakov
+    // node = new node(4, 5);
+    // mylist.add(node);
+    // mylist.remove(node);
 }
 
-
-myLinkedList('yakov', 4, 'a'); //['y','a','k','o','v'],2,'a' => yaakov
+console.log(myProgram([1, 2, 3, 4, 6]));
