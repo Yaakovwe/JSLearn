@@ -5,13 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Apex Debugger",
+            "type": "apex",
+            "request": "launch",
+            "userIdFilter": [],
+            "requestTypeFilter": [],
+            "entryPointFilter": "",
+            "sfdxProject": "${workspaceRoot}"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\diamond.js"
+            "program": "${file}"
+
         }
     ]
 }
