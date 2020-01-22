@@ -1,10 +1,13 @@
+"use strict";
 const util = require('util');
 
 
 function arrayToList(array) {
     let list = null;
+    console.log(array);
     const arrReversed = array.reverse();
-    for (var i = 0; i < arrReversed.length; i++) {
+    console.log(array);
+    for (let i = 0; i < arrReversed.length; i++) {
         // console.log(i); //2, then 1
         // console.log(array[i]); //20, then 10
         list = {
