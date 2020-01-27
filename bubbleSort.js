@@ -3,7 +3,6 @@ const util = require('util');
 
 function bubbleSort(data) {
     let temp;
-    //const size = data.length;
     let swap = true;
     while (swap === true) {
         swap = false;
