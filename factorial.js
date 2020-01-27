@@ -1,8 +1,10 @@
 function factorial(num) {
-    let multipledNum = 1;
-    for (let i = 1; i <= num; i++) {
-        multipledNum *= i;
+    let factorialNum = 1;
+    let i = 1;
+    while (i <= num) {
+        factorialNum *= i;
+        i++;
     }
-    return multipledNum;
+    return factorialNum;
 }
-console.log(factorial(5));
+console.log(factorial(8));
