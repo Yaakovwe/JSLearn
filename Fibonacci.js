@@ -2,7 +2,7 @@
 const util = require('util');
 
 function fibonacci(array) {
-    let fibonacciArray = [];
+    const fibonacciArray = [];
     for (let i = 0; i < array.length; i++) {
         if (array[i] === undefined) {
             array[i] = 0;
