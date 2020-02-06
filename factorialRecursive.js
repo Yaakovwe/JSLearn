@@ -17,7 +17,8 @@ function factorialRecursive(num) {
     }
 }
 
-console.log(factorialRecursive(7, 7));
-console.log(factorialRecursive(0, 0));
-console.log(factorialRecursive(5, 5));
-console.log(factorialRecursive(8, 8));
+console.log(factorialRecursive(7));
+console.log(factorialRecursive(0));
+console.log(factorialRecursive(5));
+console.log(factorialRecursive(8));
+console.log(factorialRecursive(1));
