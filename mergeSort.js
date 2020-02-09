@@ -1,18 +1,16 @@
-const mergeSort = (array) => {
-        const middle = array.length / 2;
-        if (middle <= 1) {
-            return array;
-        }
-        else{
-          
-        }
+'use strict';
+
+function mergeSort(array) {
+    if (array.length <= 1) {
+        return array;
     }
-    // const mergeSortRecursive = (array, num) => {
-    //     if (num <= 0) {
-    //         return (num);
-    //     } else {
+    const middle = array.length / 2;
+    const left = array.slice(0, middle);
+    const right = array.slice(middle);
+    const mergedArray = [];
+    return mergedArray.concat(mergeSort(left), mergeSort(right));
+}
 
-//     }
-// }
 
-mergeSort([38, 27, 43, 9, 82, 10]);
+
+console.log(mergeSort([38, 27, 43, 9, 82, 10]));
